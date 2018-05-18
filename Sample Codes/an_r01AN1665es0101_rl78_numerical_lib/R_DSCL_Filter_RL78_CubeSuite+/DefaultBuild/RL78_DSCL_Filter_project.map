@@ -1,0 +1,386 @@
+
+
+
+78K0R Linker V1.60                            Date: 7 May 2013 Page:   1
+
+Command:   -yC:\Program Files\Renesas Electronics\CubeSuite+\Device\RL78
+           \Devicefile -_msgoff -oDefaultBuild\RL78_DSCL_Filter_project.
+           lmf -gi00000000000000000000h -go04h,0FE00h,512 -gb0FFFFF8H -m
+           i0 -s -pDefaultBuild\RL78_DSCL_Filter_project.map C:\Program 
+           Files\Renesas Electronics\CubeSuite+\CA78K0R\V1.40\lib78k0r\s
+           0rll.rel DefaultBuild\sample_dscl_main.rel DefaultBuild\sampl
+           e_dscl_fir.rel DefaultBuild\sample_dscl_iirbiquad.rel Default
+           Build\sample_dscl_iirsinglepole.rel -bR_dscl_filter_rl78.lib 
+           -bcl78m -bcl78mf -ilib -iC:\Program Files\Renesas Electronics
+           \CubeSuite+\CA78K0R\V1.40\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\RL78_DSCL_Filter_project.lmf
+Map-file:  DefaultBuild\RL78_DSCL_Filter_project.map
+Direc-file:
+Directive:
+
+
+*** Link information ***
+
+    33 output segment(s)
+  BA6H byte(s) real data
+   691 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=10000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  sample_dscl_main
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  sample_dscl_fir
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  sample_dscl_iirbiquad
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  sample_dscl_iirsinglepole
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_dscl_version
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_dscl_iirsinglepole_i16i16
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_dscl_fir_i16i16
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_dscl_iirbiquad_i16i16
+                                      00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT sample_dscl_main
+                                      00002H    00000H
+                  @@RLINIT sample_dscl_fir
+                                      00002H    00000H
+                  @@RLINIT sample_dscl_iirbiquad
+                                      00002H    00000H
+                  @@RLINIT sample_dscl_iirsinglepole
+                                      00002H    00000H
+                  @@RLINIT r_dscl_version
+                                      00002H    00000H
+                  @@RLINIT r_dscl_iirsinglepole_i16i16
+                                      00002H    00000H
+                  @@RLINIT r_dscl_fir_i16i16
+                                      00002H    00000H
+                  @@RLINIT r_dscl_iirbiquad_i16i16
+                                      00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS sample_dscl_main
+                                      00002H    00000H
+                  @@R_INIS sample_dscl_fir
+                                      00002H    00000H
+                  @@R_INIS sample_dscl_iirbiquad
+                                      00002H    00000H
+                  @@R_INIS sample_dscl_iirsinglepole
+                                      00002H    00000H
+                  @@R_INIS r_dscl_version
+                                      00002H    00000H
+                  @@R_INIS r_dscl_iirsinglepole_i16i16
+                                      00002H    00000H
+                  @@R_INIS r_dscl_fir_i16i16
+                                      00002H    00000H
+                  @@R_INIS r_dscl_iirbiquad_i16i16
+                                      00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   sample_dscl_main
+                                      00002H    00000H
+                  @@CALT   sample_dscl_fir
+                                      00002H    00000H
+                  @@CALT   sample_dscl_iirbiquad
+                                      00002H    00000H
+                  @@CALT   sample_dscl_iirsinglepole
+                                      00002H    00000H
+                  @@CALT   r_dscl_version
+                                      00002H    00000H
+                  @@CALT   r_dscl_iirsinglepole_i16i16
+                                      00002H    00000H
+                  @@CALT   r_dscl_fir_i16i16
+                                      00002H    00000H
+                  @@CALT   r_dscl_iirbiquad_i16i16
+                                      00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+         @@R_INIT                     00004H    00052H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00004H    00000H
+                  @@R_INIT sample_dscl_main
+                                      00004H    00000H
+                  @@R_INIT sample_dscl_fir
+                                      00004H    00050H
+                  @@R_INIT sample_dscl_iirbiquad
+                                      00054H    00002H
+                  @@R_INIT sample_dscl_iirsinglepole
+                                      00056H    00000H
+                  @@R_INIT r_dscl_version
+                                      00056H    00000H
+                  @@R_INIT r_dscl_iirsinglepole_i16i16
+                                      00056H    00000H
+                  @@R_INIT r_dscl_fir_i16i16
+                                      00056H    00000H
+                  @@R_INIT r_dscl_iirbiquad_i16i16
+                                      00056H    00000H
+                  @@R_INIT @rom       00056H    00000H
+* gap *                               00056H    0006AH
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   sample_dscl_main
+                                      000C4H    00000H
+                  @@CODE   sample_dscl_fir
+                                      000C4H    00000H
+                  @@CODE   sample_dscl_iirbiquad
+                                      000C4H    00000H
+                  @@CODE   sample_dscl_iirsinglepole
+                                      000C4H    00000H
+                  @@CODE   r_dscl_version
+                                      000C4H    00000H
+                  @@CODE   r_dscl_iirsinglepole_i16i16
+                                      000C4H    00000H
+                  @@CODE   r_dscl_fir_i16i16
+                                      000C4H    00000H
+                  @@CODE   r_dscl_iirbiquad_i16i16
+                                      000C4H    00000H
+         @@BASE                       000C4H    00000H  CSEG BASE
+                  @@BASE   sample_dscl_main
+                                      000C4H    00000H
+                  @@BASE   sample_dscl_fir
+                                      000C4H    00000H
+                  @@BASE   sample_dscl_iirbiquad
+                                      000C4H    00000H
+                  @@BASE   sample_dscl_iirsinglepole
+                                      000C4H    00000H
+                  @@BASE   r_dscl_version
+                                      000C4H    00000H
+                  @@BASE   r_dscl_iirsinglepole_i16i16
+                                      000C4H    00000H
+                  @@BASE   r_dscl_fir_i16i16
+                                      000C4H    00000H
+                  @@BASE   r_dscl_iirbiquad_i16i16
+                                      000C4H    00000H
+         ?CSEGSI                      000C4H    0000AH  CSEG
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    000D3H  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ACH
+                  @@LCODE  @llsh      00184H    0001BH
+                  @@LCODE  @iscmp     0019FH    0000CH
+         @@CODEL                      001ABH    007BBH  CSEG
+                  @@CODEL  sample_dscl_main
+                                      001ABH    00037H
+                  @@CODEL  sample_dscl_fir
+                                      001E2H    00092H
+                  @@CODEL  sample_dscl_iirbiquad
+                                      00274H    0008CH
+                  @@CODEL  sample_dscl_iirsinglepole
+                                      00300H    00051H
+                  @@CODEL  r_dscl_version
+                                      00351H    00005H
+                  @@CODEL  r_dscl_iirsinglepole_i16i16
+                                      00356H    0009DH
+                  @@CODEL  r_dscl_iirsinglepole_i16i16_asm_nr
+                                      003F3H    00091H
+                  @@CODEL  r_dscl_iirsinglepole_i16i16_asm_r
+                                      00484H    000AEH
+                  @@CODEL  r_dscl_fir_i16i16
+                                      00532H    0008AH
+                  @@CODEL  r_dscl_fir_i16i16_asm_nr
+                                      005BCH    00088H
+                  @@CODEL  r_dscl_fir_i16i16_asm_r
+                                      00644H    00096H
+                  @@CODEL  r_dscl_iirbiquad_i16i16
+                                      006DAH    000C1H
+                  @@CODEL  r_dscl_iirbiquad_i16i16_asm_r
+                                      0079BH    000EEH
+                  @@CODEL  r_dscl_iirbiquad_i16i16_asm_nr
+                                      00889H    000DDH
+         @@LCODEL                     00966H    0006EH  CSEG
+                  @@LCODEL @hdwinit   00966H    00001H
+                  @@LCODEL malloc     00967H    0000FH
+                  @@LCODEL exit       00976H    0001CH
+                  @@LCODEL @sbrk      00992H    00042H
+* gap *                               009D4H    0162CH
+         @@CNST                       02000H    0003CH  CSEG MIRRORP
+                  @@CNST   @cstart    02000H    00000H
+                  @@CNST   sample_dscl_main
+                                      02000H    00000H
+                  @@CNST   sample_dscl_fir
+                                      02000H    00000H
+                  @@CNST   sample_dscl_iirbiquad
+                                      02000H    00028H
+                  @@CNST   sample_dscl_iirsinglepole
+                                      02028H    00014H
+                  @@CNST   r_dscl_version
+                                      0203CH    00000H
+                  @@CNST   r_dscl_iirsinglepole_i16i16
+                                      0203CH    00000H
+                  @@CNST   r_dscl_fir_i16i16
+                                      0203CH    00000H
+                  @@CNST   r_dscl_iirbiquad_i16i16
+                                      0203CH    00000H
+* gap *                               0203CH    0DDC4H
+         ??OCDROM                     0FE00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FE900H   SIZE=01700H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FE900H    00122H  DSEG BASEP
+                  @@DATA   @cstart    FE900H    000BAH
+                  @@DATA   sample_dscl_main
+                                      FE9BAH    00004H
+                  @@DATA   sample_dscl_fir
+                                      FE9BEH    00028H
+                  @@DATA   sample_dscl_iirbiquad
+                                      FE9E6H    00028H
+                  @@DATA   sample_dscl_iirsinglepole
+                                      FEA0EH    00014H
+                  @@DATA   r_dscl_version
+                                      FEA22H    00000H
+                  @@DATA   r_dscl_iirsinglepole_i16i16
+                                      FEA22H    00000H
+                  @@DATA   r_dscl_fir_i16i16
+                                      FEA22H    00000H
+                  @@DATA   r_dscl_iirbiquad_i16i16
+                                      FEA22H    00000H
+                  @@DATA   @rom       FEA22H    00000H
+         @@INIT                       FEA22H    00052H  DSEG BASEP
+                  @@INIT   @cstart    FEA22H    00000H
+                  @@INIT   sample_dscl_main
+                                      FEA22H    00000H
+                  @@INIT   sample_dscl_fir
+                                      FEA22H    00050H
+                  @@INIT   sample_dscl_iirbiquad
+                                      FEA72H    00002H
+                  @@INIT   sample_dscl_iirsinglepole
+                                      FEA74H    00000H
+                  @@INIT   r_dscl_version
+                                      FEA74H    00000H
+                  @@INIT   r_dscl_iirsinglepole_i16i16
+                                      FEA74H    00000H
+                  @@INIT   r_dscl_fir_i16i16
+                                      FEA74H    00000H
+                  @@INIT   r_dscl_iirbiquad_i16i16
+                                      FEA74H    00000H
+                  @@INIT   @rom       FEA74H    00000H
+         @@INIS                       FEA74H    00000H  DSEG UNITP
+                  @@INIS   @cstart    FEA74H    00000H
+                  @@INIS   sample_dscl_main
+                                      FEA74H    00000H
+                  @@INIS   sample_dscl_fir
+                                      FEA74H    00000H
+                  @@INIS   sample_dscl_iirbiquad
+                                      FEA74H    00000H
+                  @@INIS   sample_dscl_iirsinglepole
+                                      FEA74H    00000H
+                  @@INIS   r_dscl_version
+                                      FEA74H    00000H
+                  @@INIS   r_dscl_iirsinglepole_i16i16
+                                      FEA74H    00000H
+                  @@INIS   r_dscl_fir_i16i16
+                                      FEA74H    00000H
+                  @@INIS   r_dscl_iirbiquad_i16i16
+                                      FEA74H    00000H
+                  @@INIS   @rom       FEA74H    00000H
+         @@DATS                       FEA74H    00000H  DSEG UNITP
+                  @@DATS   @cstart    FEA74H    00000H
+                  @@DATS   sample_dscl_main
+                                      FEA74H    00000H
+                  @@DATS   sample_dscl_fir
+                                      FEA74H    00000H
+                  @@DATS   sample_dscl_iirbiquad
+                                      FEA74H    00000H
+                  @@DATS   sample_dscl_iirsinglepole
+                                      FEA74H    00000H
+                  @@DATS   r_dscl_version
+                                      FEA74H    00000H
+                  @@DATS   r_dscl_iirsinglepole_i16i16
+                                      FEA74H    00000H
+                  @@DATS   r_dscl_fir_i16i16
+                                      FEA74H    00000H
+                  @@DATS   r_dscl_iirbiquad_i16i16
+                                      FEA74H    00000H
+                  @@DATS   @rom       FEA74H    00000H
+         @@INITL                      FEA74H    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FEA74H    00000H
+                  @@INITL  sample_dscl_main
+                                      FEA74H    00000H
+                  @@INITL  sample_dscl_fir
+                                      FEA74H    00000H
+                  @@INITL  sample_dscl_iirbiquad
+                                      FEA74H    00000H
+                  @@INITL  sample_dscl_iirsinglepole
+                                      FEA74H    00000H
+                  @@INITL  r_dscl_version
+                                      FEA74H    00000H
+                  @@INITL  r_dscl_iirsinglepole_i16i16
+                                      FEA74H    00000H
+                  @@INITL  r_dscl_fir_i16i16
+                                      FEA74H    00000H
+                  @@INITL  r_dscl_iirbiquad_i16i16
+                                      FEA74H    00000H
+                  @@INITL  @rom       FEA74H    00000H
+         @@DATAL                      FEA74H    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FEA74H    00000H
+                  @@DATAL  sample_dscl_main
+                                      FEA74H    00000H
+                  @@DATAL  sample_dscl_fir
+                                      FEA74H    00000H
+                  @@DATAL  sample_dscl_iirbiquad
+                                      FEA74H    00000H
+                  @@DATAL  sample_dscl_iirsinglepole
+                                      FEA74H    00000H
+                  @@DATAL  r_dscl_version
+                                      FEA74H    00000H
+                  @@DATAL  r_dscl_iirsinglepole_i16i16
+                                      FEA74H    00000H
+                  @@DATAL  r_dscl_fir_i16i16
+                                      FEA74H    00000H
+                  @@DATAL  r_dscl_iirbiquad_i16i16
+                                      FEA74H    00000H
+                  @@DATAL  @rom       FEA74H    00000H
+         @@BITS                       FEA74H    00000H  BSEG
+                  @@BITS   @cstart    FEA74H.0  00000H.0
+                  @@BITS   sample_dscl_main
+                                      FEA74H.0  00000H.0
+                  @@BITS   sample_dscl_fir
+                                      FEA74H.0  00000H.0
+                  @@BITS   sample_dscl_iirbiquad
+                                      FEA74H.0  00000H.0
+                  @@BITS   sample_dscl_iirsinglepole
+                                      FEA74H.0  00000H.0
+                  @@BITS   r_dscl_version
+                                      FEA74H.0  00000H.0
+                  @@BITS   r_dscl_iirsinglepole_i16i16
+                                      FEA74H.0  00000H.0
+                  @@BITS   r_dscl_fir_i16i16
+                                      FEA74H.0  00000H.0
+                  @@BITS   r_dscl_iirbiquad_i16i16
+                                      FEA74H.0  00000H.0
+* gap *                               FEA74H    01464H
+         @@RTARG0                     FFED8H    00008H  DSEG AT
+                  @@RTARG0 @RTARG0    FFED8H    00008H
+* gap *                               FFEE0H    00020H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F104LE
+ Device file : V1.20
+
